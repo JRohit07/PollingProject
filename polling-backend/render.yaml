@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: polling-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: CLIENT_URL
+        value: https://your-frontend-url.vercel.app
