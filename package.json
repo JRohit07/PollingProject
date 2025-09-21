@@ -1,0 +1,25 @@
+{
+  "name": "live-polling-system",
+  "version": "1.0.0",
+  "description": "A real-time polling system with React frontend and Node.js backend",
+  "scripts": {
+    "install:all": "cd frontend && npm install && cd ../polling-backend && npm install",
+    "dev": "concurrently \"cd polling-backend && npm run dev\" \"cd frontend && npm start\"",
+    "build": "cd frontend && npm run build",
+    "start:backend": "cd polling-backend && npm start",
+    "start:frontend": "cd frontend && npm start",
+    "deploy": "./deploy.sh"
+  },
+  "keywords": [
+    "polling",
+    "react",
+    "nodejs",
+    "socket.io",
+    "real-time"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
